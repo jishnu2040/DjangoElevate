@@ -6,4 +6,8 @@ class UserProfile(models.Model):
     bio  = models.CharField(blank=True, max_length=100)
 
     def __str__(self):
-        return f'{self.user.username} Profile' 
+        return f'{self.user.username} Profile'
+        
+class Car(models.Model):
+    name = models.CharField(max_length=50)
+    
